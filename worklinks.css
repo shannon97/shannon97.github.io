@@ -9,3 +9,29 @@ h1 {
     padding-top: 600px;
 }
 
+#contact_btn {
+	justify-content: flex-end;
+	padding: 10px;
+	background: #32312F;
+  opacity: 95%;
+	color: white;
+  border-radius: 7px;
+  cursor: pointer;
+}
+
+nav {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  padding: 10px;
+}
+
+#li_logo {
+  width: 30px;
+  cursor: pointer;
+}
+
+#ig_logo {
+  width: 40px;
+  cursor: pointer;
+}
