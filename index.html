@@ -1,1 +1,103 @@
-Hello World
+cd <!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="stylesheet" href="styles.css">
+    <title>SO_Portfolio</title>
+</head>
+
+<body>
+    
+    <header>
+        <nav>
+            <a href="http://bit.ly/linkedinSO" target="_blank"> <img src="images/li_logo.png" class="socialimgs" id="li_logo"/></a>
+            <a href="https://www.instagram.com/shannonoliver_/" target="_blank"> <img src="images/ig_logo.png" class="socialimgs" id="ig_logo"/></a>
+            <button id="contact_btn" onclick="location.href='#contact_form'">Contact</button>
+        </nav>
+    </header>
+    
+    <main>
+        
+        <section id="main">
+
+            <div id="my_details">
+
+                <div id="picname">
+                    <img src="images/headshot.jpg" id="profile_pic"/>
+                    <h1 id="nameSO">Shannon Oliver</h1>
+                </div>
+
+                <div class="wrap_collapsible">
+                    <input id="collapsible" class="toggle" type="checkbox">
+                    <label for="collapsible" class="lbl-toggle">About Me</label>
+                    <div class="collapsible-content">
+                      <div class="content-inner">
+                        <p>
+                          blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah
+                        </p>
+                      </div>
+                    </div>
+                </div>
+
+            </div>            
+           
+            <div id="my_work">
+                <h1 id="recent_work">Recent Work</h1>
+
+                <div class="pages">
+                <a href="work_1.html" class="work_links">HTML & CSS</a>
+                </div>
+
+                <div class="pages">
+                <a href="work_2.html" class="work_links">Python</a>
+                </div>
+
+                <div class="pages">
+                <a href="work_3.html" class="work_links">Django</a>
+                </div>
+
+                <div class="pages">
+                <a href="work_4.html" class="work_links">JavaScript</a>
+                </div>
+
+            </div>
+        </section>
+
+        <section id="contact_form">
+            <h3 id="contactus">Have a question, or just want to say 'Hi'? <br> Reach out below!</h3>
+
+            <form action="mailto:shannon-alexis@hotmail.com" method="post" enctype="text/plain">
+
+                <div class="formfields">
+                    <input type="text" name="name" placeholder="Name*" required>
+                </div>
+
+                <div class="formfields">
+                    <input type="text" name="email" placeholder="E-Mail*" required>
+                </div>
+
+                <div class="formfields">
+                    <input type="text" name="number" placeholder="Phone Number*" required>
+                </div>
+
+                <div class="formfields">
+                    <textarea name="subject" placeholder="What can I help you with?"></textarea>
+                </div>
+                    <button id="contact_btn">Send</button>
+            </form>
+        
+        </section>
+        
+    </main>
+
+    <footer>
+        <p> footer stuff here </p>
+    </footer>
+    
+</body>
+
+</html>

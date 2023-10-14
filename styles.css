@@ -1,0 +1,210 @@
+html {
+  scroll-behavior: smooth;
+}
+
+/*-----------------------body----------------------*/
+  body {
+    margin: 0;
+    padding: 0;
+    background: linear-gradient(115deg, #FFFCF5 50%, #6F503A 50%);
+}
+
+#main {
+  display: flex;
+  justify-content:space-around;
+}
+
+header a {
+  display: flex;
+  margin: 0 10px;
+}
+
+/*-----------------------nav-----------------------*/
+#contact_btn {
+	justify-content: flex-end;
+	padding: 10px;
+	background: #32312F;
+  opacity: 95%;
+	color: white;
+  border-radius: 7px;
+  cursor: pointer;
+}
+
+nav {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  padding: 10px;
+}
+
+#li_logo {
+  width: 30px;
+  cursor: pointer;
+}
+
+#ig_logo {
+  width: 40px;
+  cursor: pointer;
+}
+
+/*------------------------me-----------------------*/
+
+#my_details {
+  padding: 20px 0px 50px 0px;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+
+#profile_pic {
+  width: 360px;
+  height: 440px;
+}
+
+#picname {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/*about me*/
+
+/* .wrap_collapsible {
+  display: flex;
+} */
+
+input[type='checkbox'] {
+  display: none;
+}
+
+.lbl-toggle {
+  display: flex;
+  flex-direction: column;
+  font-size: 18px;
+  width: 50%;
+  text-align: center;
+  color: #6F503A;
+  background: #fbf5e3;
+  border-radius: 7px;
+  transition: all 0.25s ease-out;
+  cursor: pointer;
+}
+
+.lbl-toggle::before {
+  content: ' ';
+  display: flex;
+  vertical-align: middle;
+  transition: transform .2s ease-out;
+}
+
+.collapsible-content .content-inner {
+  background: #fbf5e3;
+  border-bottom: 1px solid #f3e8c8;
+  margin-left: 0px;
+  width: 400px;
+  border-radius: 7px;
+  padding: 10px;
+  font-size: 18px;
+}
+
+.collapsible-content {
+  max-height: 0px;
+  overflow: hidden;
+  transition: max-height .25s ease-in-out;
+}
+
+.toggle:checked + .lbl-toggle + .collapsible-content {
+  max-height: 100vh;
+}
+
+/*----------------------work-----------------------*/
+
+#my_work {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+
+#recent_work {
+text-align: center;
+display: flex;
+justify-content: center;
+}
+
+.work_links {
+	display: flex;
+	justify-content:center;
+	padding: 15px 120px;
+	background: #583c39;
+  opacity: 90%;
+  color: white;
+  text-decoration: none;
+  border-radius: 7px;
+  cursor: pointer;
+}
+
+.pages {
+  padding: 10px;
+}
+
+/*----------------------form-----------------------*/
+
+#contact_form {
+  text-align: center;
+  background-color: #A0806D;
+  opacity: 98%;
+  padding: 10px 0px 10px 0px;
+}
+
+.formfields {
+  padding: 7px;
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+}
+
+.formfields input[type="text"],
+.formfields textarea {
+  width: 50%;
+  border-radius: 7px;
+}
+
+/*----------------------footer--------------------*/
+
+footer {
+  padding: 0;
+  margin: 0;
+  text-align: center;
+  background-color: transparent;
+}
+
+/*---------------media query stuff----------------*/
+
+@media (max-width: 768px) {
+  #main {
+    flex-direction: column;
+  }
+
+  #my_details {
+    order: 1;
+    padding: 0; 
+  }
+
+  #profile_pic {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 5%;
+  }
+
+  #my_work {
+    order: 2;
+    margin-top: 50px;
+    margin-bottom: 20px;
+    display: flex;
+    }
+}
+
+/* *{
+  border: 1px solid red;
+}  */
